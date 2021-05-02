@@ -1,7 +1,1 @@
-# Control de Obstáculos Ultrasonidos
-Trabajo fin de grado Ingeniería Electrónica y Automática
-
-El siguiente código se ha realizado para una placa Arduino.
-Utiliza la librería "NewPing" para medir la distancia de 5 sensores ultrasonidos HC-SR04.
-4 Sensores para medir distancias laterales y uno para medir altura.
-Si el sensor inferior mide más de 1.5 metros, empieza a actuar el control. Si alguno de los sensores laterales mide una distancia menor de 1.5 metros, manda un comando MAVLINK de RCOverride, el cual sobreescribe las entradas que recibe el APM de la controladora de vuelo.
+The following code has been made for an Arduino board. Use the "NewPing" library to measure the distance of 5 HC-SR04 ultrasonic sensors. 4 sensors to measure lateral distances and one to measure height. If the lower sensor measures more than 1.5 meters, the control begins to act. If any of the side sensors measure a distance less than 1.5 meters, it sends a MAVLINK command from RCOverride, which overwrites the inputs received by the Pixhawk from the Operator. 
